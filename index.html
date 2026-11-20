@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkidesh K V — Data Analyst</title>
+<meta name="description" content="Venkidesh K V - Data Analyst skilled in SQL, Python, Power BI and Excel. Portfolio of ETL pipelines, data warehouses and dashboards.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#top" class="nav-brand">VKV</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero container">
+    <p class="hero-kicker">Hello, I'm</p>
+    <h1 class="hero-name">Venkidesh K V</h1>
+    <p class="hero-title">Data Analyst &nbsp;|&nbsp; SQL &nbsp;|&nbsp; Python &nbsp;|&nbsp; Power BI</p>
+    <p class="hero-summary">I turn raw, messy data into clean datasets, dashboards and reports that help businesses make decisions.</p>
+    <p class="hero-location">Kerala, India</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/venkideshkv" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-outline" href="https://github.com/venkidesh-K" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-outline" href="mailto:venkidesh1443@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2 class="section-title">About</h2>
+    <div class="about-grid">
+      <p>Data is where I do my best work: taking raw inputs and turning them into validated datasets and dashboards people can trust. I work across the full analytics flow, from extraction and cleaning in SQL and Python to modelling and reporting in Power BI, with working knowledge of data engineering basics like ETL pipelines, data validation and warehouse design (Bronze/Silver/Gold, Star Schema).</p>
+      <p>My finance background, an M.Com in Accounting and Finance and a B.Com in Cooperation, means I understand the numbers behind the data: budgets, reconciliations and the reports businesses actually run on.</p>
+    </div>
+    <div class="about-cards">
+      <div class="card">
+        <h3>Analytics toolkit</h3>
+        <p>SQL Server, Python (Pandas, NumPy), Power BI (DAX, Power Query) and Advanced Excel for extraction, cleaning, modelling and reporting.</p>
+      </div>
+      <div class="card">
+        <h3>Data engineering basics</h3>
+        <p>ETL/ELT pipelines, medallion architecture, star schema modelling, data validation, deduplication and data quality checks.</p>
+      </div>
+      <div class="card">
+        <h3>Finance foundation</h3>
+        <p>M.Com in Accounting and Finance with hands-on experience in bank reconciliation, KYC compliance and TDS processing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Data &amp; analytics</h3>
+        <ul>
+          <li>SQL Server: joins, CTEs, subqueries, window functions, views</li>
+          <li>Python: Pandas, NumPy, Matplotlib, REST API extraction</li>
+          <li>Data cleaning, transformation, validation and deduplication</li>
+          <li>ETL/ELT concepts and relational data warehousing</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>BI &amp; reporting</h3>
+        <ul>
+          <li>Power BI: Power Query, DAX measures, data modelling, KPI dashboards</li>
+          <li>Excel: advanced formulas, PivotTables, VBA macros, dashboards</li>
+          <li>Star schema design, drill-down reports, slicers and bookmarks</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Working with people</h3>
+        <ul>
+          <li>Stakeholder management and workshop facilitation</li>
+          <li>Team leadership and agile project delivery</li>
+          <li>Presenting insights as clear, decision-ready narratives</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Each project runs end to end: raw source data in, validated dataset or dashboard out.</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>Football Standings ETL Pipeline</h3>
+          <p class="project-tools">Python · pandas · SQLAlchemy · SQL Server · Power BI</p>
+          <p>An end-to-end ETL pipeline that pulls Premier League standings from the API-Football REST API, transforms nested JSON into a clean pandas DataFrame, and loads it into SQL Server through a staging table with a MERGE upsert, so reruns never create duplicates. A two-page Power BI dashboard on the loaded table shows position, points, results, goals and form.</p>
+          <ul>
+            <li>REST API extraction with raw JSON saved for reprocessing</li>
+            <li>Idempotent loads: staging table, MERGE upsert, row-count verification</li>
+            <li>Two-page Power BI dashboard on the SQL Server table</li>
+          </ul>
+        </div>
+        <a class="project-link" href="https://github.com/venkidesh-K/football-standings-etl-pipeline" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>SQL Server Data Warehouse Development</h3>
+          <p class="project-tools">MS SQL Server · T-SQL</p>
+          <p>An end-to-end SQL Server data warehouse built on Medallion Architecture (Bronze, Silver, Gold) integrating ERP and CRM sources. ETL stored procedures ingest, cleanse and transform the data, and the Gold layer is modelled as a Star Schema of fact and dimension tables for analysis. Built as a team project from training, together with <a href="https://github.com/thousifva" target="_blank" rel="noopener">Thouseef</a>.</p>
+          <ul>
+            <li>Bronze/Silver/Gold layers with documented transformation logic</li>
+            <li>Well-structured T-SQL: JOINs, CTEs, window functions, query tuning</li>
+            <li>Validation, deduplication and consistency checks across all layers</li>
+          </ul>
+        </div>
+        <a class="project-link" href="https://github.com/venkidesh-K/sql-server-data-warehouse" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-body">
+          <h3>Power BI Project Management Dashboard</h3>
+          <p class="project-tools">Power BI · DAX · Power Query</p>
+          <p>An interactive management dashboard monitoring the performance of 1,800+ projects and 1,800+ packages. Data from multiple sources is integrated with Power Query, and DAX measures track project and financial KPIs, surfacing progress, budget allocation, expenditure, pendency, milestones and risks.</p>
+          <ul>
+            <li>1,800+ projects and packages tracked against financial KPIs</li>
+            <li>Power Query integration across multiple data sources</li>
+            <li>Clear, stakeholder-ready design for data-driven decisions</li>
+          </ul>
+        </div>
+        <a class="project-link" href="https://github.com/venkidesh-K/powerbi-project-management-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section container">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <p class="timeline-date">June 2026 — Present</p>
+        <div class="timeline-content">
+          <h3>Data Analyst Intern</h3>
+          <p class="timeline-org">ROWS &amp; COLUMNS · Kerala, India</p>
+          <ul>
+            <li>End-to-end data preparation and analysis on 5,000+ rows using SQL and Python, delivering actionable insights</li>
+            <li>Built dimension tables and SQL views that consolidate source tables into query-ready datasets for Power BI</li>
+            <li>Developed interactive, multi-page Power BI dashboards with Power Query, data relationships, DAX measures and drill-down filters</li>
+            <li>Strengthened dataset accuracy through systematic duplicate identification and validation checks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-date">May 2024 — July 2024</p>
+        <div class="timeline-content">
+          <h3>Associate Accountant Intern</h3>
+          <p class="timeline-org">Manappuram Asset Finance Ltd · Kerala, India</p>
+          <ul>
+            <li>Processed customer KYC documentation in compliance with organizational policies</li>
+            <li>Performed Bank Reconciliation Statements, identifying and escalating unmatched or unusual transactions</li>
+            <li>Scheduled and monitored Electronic Clearing Service (ECS) transactions for timely processing</li>
+            <li>Prepared and dispatched 4,000+ TDS letters to customers under time-sensitive deadlines</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section container">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="card">
+        <h3>M.Com, Accounting and Finance</h3>
+        <p>SRM Institute of Science and Technology, Kattankulathur</p>
+        <p class="muted">July 2023 – July 2025</p>
+      </div>
+      <div class="card">
+        <h3>B.Com, Cooperation</h3>
+        <p>Sree Narayana College, Thrissur, Kerala</p>
+        <p class="muted">August 2020 – May 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="section-sub">Open to data analyst roles. The fastest way to reach me is email or LinkedIn.</p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="mailto:venkidesh1443@gmail.com">venkidesh1443@gmail.com</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/venkideshkv" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-outline" href="https://github.com/venkidesh-K" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Venkidesh K V · Built with HTML, CSS and a little JavaScript</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
